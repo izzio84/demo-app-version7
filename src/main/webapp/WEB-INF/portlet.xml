@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<portlet-app
+  xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  version="2.0"
+  xsi:schemaLocation=
+    "http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd
+     http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="demo7-vaadin">
+
+
+  <portlet>
+  
+    <portlet-name>demo7-vaadin</portlet-name>
+    <display-name>demo7-vaadin</display-name>
+
+    <portlet-class>
+      com.vaadin.server.VaadinPortlet
+    </portlet-class>
+    
+    <init-param>
+			<name>UI</name>
+			<value>org.test.sette.MyUI</value>
+	</init-param>
+
+	<init-param>
+			<name>vaadin.resources.path</name>
+			<value>/demosette/vaadin</value>
+	</init-param>
+	<cache-scope>private</cache-scope> 
+
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>view</portlet-mode>
+    </supports>
+
+    <portlet-info>
+      <title>demo7-vaadin</title>
+      <short-title>demo7-vaadin</short-title>
+    </portlet-info>
+  </portlet>
+  
+  
+  <default-namespace>http://JStar</default-namespace>
+  
+  
+</portlet-app>
